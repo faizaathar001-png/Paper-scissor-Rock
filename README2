@@ -1,0 +1,52 @@
+Introduction
+
+This project is a graphical Rock, Paper, Scissors game developed using Python and Tkinter. It includes a rule-based AI that makes decisions based on the player’s previous moves. Initially, the AI plays randomly, but after a few rounds, it analyzes the player’s pattern and chooses a counter move. The game provides an interactive and user-friendly interface with scoring and round tracking.
+
+Objectives
+To develop an interactive game using Python GUI
+To implement rule-based AI logic
+To understand decision-making based on user behavior
+To create a visually appealing interface
+To enhance problem-solving and programming skills
+Tools Used
+Python (Programming Language)
+Tkinter (GUI Library)
+Random Module (for initial AI moves)
+System Design
+
+The system consists of two main parts:
+
+Frontend (GUI): Built using Tkinter, includes buttons, labels, and frames for interaction
+Backend Logic:
+Stores player move history
+AI analyzes last 3 moves
+Decision logic selects counter move
+Score and round management
+
+Flow:
+User Input → AI Decision → Result Calculation → Score Update → Display Output
+
+Key Features
+Rule-based intelligent AI
+Colorful and user-friendly interface
+Score tracking system
+5-round gameplay
+Move history display
+AI decision explanation
+Reset game option
+Calculations / Logic
+AI checks last 3 player moves
+Counts frequency of each move
+Finds most used move
+Uses counter strategy:
+Rock → Paper
+Paper → Scissors
+Scissors → Rock
+
+Winning Rules:
+
+Rock beats Scissors
+Paper beats Rock
+Scissors beats Paper
+
+Score is updated based on each round result, and the final winner is decided after 5 rounds.
