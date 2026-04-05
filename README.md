@@ -1,18 +1,10 @@
 import tkinter as tk
 from tkinter import messagebox
 import random
-
-# ============================================
-# Rock Paper Scissors - Colorful Rule-Based AI
-# Assignment 5 - AI Logic Implementation
-# ============================================
-
 player_history = []
 player_score = 0
 ai_score = 0
 round_num = 1
-
-# ── Colors ──────────────────────────────────
 BG        = "#f8f7ff"
 ROCK_BG   = "#EEEDFE"
 ROCK_BD   = "#AFA9EC"
@@ -31,8 +23,6 @@ DRAW_BG   = "#EEEDFE"
 DRAW_FG   = "#26215C"
 RULE_BG   = "#FAEEDA"
 RULE_FG   = "#854F0B"
-
-# ── AI Logic ────────────────────────────────
 def ai_move():
     if len(player_history) < 3:
         return random.choice(["rock", "paper", "scissors"])
@@ -53,8 +43,6 @@ def get_winner(player, ai):
         return "Player Wins"
     else:
         return "AI Wins"
-
-# ── Game Logic ──────────────────────────────
 def play(player_move):
     global player_score, ai_score, round_num
     if round_num > 5:
@@ -134,8 +122,6 @@ def reset_game():
     round_label.config(text="Round: 1 / 5")
     rule_label.config(text="AI Rule: Playing randomly for the first 3 rounds")
     history_label.config(text="History: ")
-
-# ── GUI Setup ───────────────────────────────
 root = tk.Tk()
 root.title("Rock Paper Scissors - Rule-Based AI")
 root.geometry("520x600")
